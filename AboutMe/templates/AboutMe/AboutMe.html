@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- normal CSS-->
+    <link href="{% static "AboutMe/CSS/AboutMe.css" %}" rel="stylesheet"
+    type="text/CSS">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>Jonathan's Portfolio Website</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand p-2" href="#">Jonathan</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-expanded="false"
+        aria-controls="navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              style="font-size: 20px"
+              href="http://127.0.0.1:8000/home/"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              style="font-size: 20px"
+              href="http://127.0.0.1:8000/Projects"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="font-size: 20px"
+              href="http://127.0.0.1:8000/AboutMe"
+              >About me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="font-size: 20px"
+              href="http://127.0.0.1:8000/Blog"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <span class="navbar-text" style="color: black"> </span>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- picture and About Me title-->
+        <div class="col-lg-4 offset-lg-2">
+          <p class="display-2 text-center p-4 font-weight bold">About Me</p>
+          <div class="justify-content-center image-border">
+            <img src="{% static "AboutMe/IMG/me.jpg"%}" id="me" alt="Cinque
+            Terre">
+          </div>
+        </div>
+        <!-- Information about me-->
+
+        <div class="col-lg-4 info">
+          <p class="display-6 text-center" style="font-size: 30px">
+            My name is Jonathan and I'm a student at the University of Virginia
+            pursuing a degree in computer science
+          </p>
+          <p
+            class="display-6 text-center"
+            style="font-size: 26px; font-weight: 400"
+          >
+            I'm currently a student navigating the world of computer science!
+            I'm always interested in learning new things and strive to gain real
+            world experience in the industry. I enjoy collaborating and building
+            connections with new people
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--More about me-->
+    <div class="container-fluid m-3">
+      <div class="col-lg-12 background justify-content-center p-2">
+        <h6 class="text-lg-center">More about Me</h6>
+        <p class="text-lg-left">
+          I grew up in a family of engineers. My father, mother both mechanical
+          engineers and my brother a computer scientist. Because of my
+          background, I've always seen things with an engineer's eye. For the
+          work I do and in day to day life, I always notice the little details
+          and strive to set a high standard for myself. However, being brought
+          up see things with a systematic approach cause my communication and
+          social skills to lack behind of the kids my age. I made a promise to
+          myself, that I would get out there to explore this limitless world,
+          meet new people, diversify my thoughts, and collaborate with other
+          amazing people!
+        </p>
+      </div>
+    </div>
+
+    <!--Hobbies-->
+    <div class="container-fluid">
+      <div class="container-lg-12 hobby">
+        <h6 class="text-lg-center free-time">In My Free Time!</h6>
+      </div>
+      <!--Image of -->
+      <div class="row">
+        <div class="col-lg-4 justify-content-center offset-2">
+          <img src="{% static "AboutMe/IMG/bike.jpg"%}" id="bike">
+        </div>
+        <div class="col-lg-4 justify-content-center">
+          <img src="{% static "AboutMe/IMG/dance.jpg"%}" id="dance">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

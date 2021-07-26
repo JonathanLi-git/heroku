@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(rgb(141, 69, 141), rgb(240, 165, 81));
+}
+#stonk {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 60%;
+}
+#gradient {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 40%;
+}
+#java {
+  width: auto;
+  max-width: 110%;
+  height: auto;
+  max-height: 50%;
+}
+
+#website {
+  position: relative;
+  left: 27%;
+  right: 25%;
+  width: auto;
+  max-width: 550px;
+  height: auto;
+  max-height: 350px;
+}
